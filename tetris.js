@@ -2,7 +2,7 @@
 	const LARGEUR_GRILLE = 14;  // Nombre de cases en largeur
     const HAUTEUR_GRILLE = 28;  // Nombre de cases en hauteur
     const CARREAU = 20;	        // Taille en pixels d'une case de la grille
-    var canvas;                 // Un canvas est un élément HTML dans lequel on peut dessiner des formes
+    var canvas;                 
     var ctx;
 	
 	// Position de la forme sur la grille
@@ -52,6 +52,84 @@
             [0,1,1],
             [0,0,1]
         ]
+    ];
+    forme[2] = [ // Forme 3
+        [	// rotation 0 (cette forme là n'a besoin que de 2 rotations)
+            [0,0,0],
+            [1,1,0],
+            [0,1,1]
+        ],
+        [	// rotation 1
+            [0,1,0],
+            [1,1,0],
+            [1,0,0]
+        ]
+    ];
+    forme[3]= [ // Forme 4
+        [	// rotation 0
+            [0,1,0],
+            [1,1,1],
+            [0,0,0]
+        ],
+        [	// rotation 1
+            [0,1,0],
+            [0,1,1],
+            [0,1,0]
+        ],
+        [	// rotation 2
+            [0,0,0],
+            [1,1,1],
+            [0,1,0]
+        ],
+        [	// rotation 3
+            [0,1,0],
+            [1,1,0],
+            [0,1,0]
+        ]
+    ];
+    forme[4]= [ // Forme 5
+        [	// rotation 0
+            [0,0,0],
+            [1,1,1],
+            [1,0,0]
+        ],
+        [	// rotation 1
+            [1,1,0],
+            [0,1,0],
+            [0,1,0]
+        ],
+        [	// rotation 2
+            [0,0,1],
+            [1,1,1],
+            [0,0,0]
+        ],
+        [	// rotation 3
+            [0,1,0],
+            [0,1,0],
+            [0,1,1]
+        ]
+    ];
+    forme[5]= [ //forme 6
+        [   // pas de changement en cas de rotation
+            [0,0,0,0],
+            [0,1,1,0],
+            [0,1,1,0],
+            [0,0,0,0]
+        ]
+    ];
+    forme[6]= [ //forme 7
+        [	// rotation 0
+            [0,0,0,0],
+            [0,0,0,0],
+            [1,1,1,1],
+            [0,0,0,0]
+        ],
+        [	// rotation 1
+            [0,1,0,0],
+            [0,1,0,0],
+            [0,1,0,0],
+            [0,1,0,0]
+        ],
     ];
 
     // A compléter avec les autres formes    
